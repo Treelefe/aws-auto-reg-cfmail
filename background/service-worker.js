@@ -43,16 +43,16 @@ async function getMailConfig() {
   try {
     const result = await chrome.storage.local.get('mailConfig');
     mailConfig = result.mailConfig || {
-      workerDomain: 'apimail.ynxx.buzz',
-      emailDomain: 'ynxx.buzz',
-      adminPassword: 'xingxin'
+      workerDomain: '',
+      emailDomain: '',
+      adminPassword: ''
     };
   } catch (e) {
     console.error('[Service Worker] 获取邮箱配置失败:', e);
     mailConfig = {
-      workerDomain: 'apimail.ynxx.buzz',
-      emailDomain: 'ynxx.buzz',
-      adminPassword: 'xingxin'
+      workerDomain: '',
+      emailDomain: '',
+      adminPassword: ''
     };
   }
 

@@ -63,9 +63,9 @@ const mailConfigStatus = document.getElementById('mail-config-status');
 
 // 默认邮箱配置
 const DEFAULT_MAIL_CONFIG = {
-  workerDomain: 'apimail.ynxx.buzz',
-  emailDomain: 'ynxx.buzz',
-  adminPassword: 'xingxin'
+  workerDomain: '',
+  emailDomain: '',
+  adminPassword: ''
 };
 
 /**
